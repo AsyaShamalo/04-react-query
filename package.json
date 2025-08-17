@@ -15,7 +15,7 @@
     "modern-normalize": "^3.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-hot-toast": "^2.5.2",
+    "react-hot-toast": "^2.6.0",
     "react-paginate": "^8.3.0"
   },
   "devDependencies": {
@@ -31,4 +31,5 @@
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.4"
   }
+
 }

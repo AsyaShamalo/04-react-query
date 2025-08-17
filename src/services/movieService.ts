@@ -6,7 +6,7 @@ export interface FetchMoviesResponse {
     total_pages: number;
 }
 
-const API_TOKEN = import.meta.env.VITE_API_TOKEN;
+const API_TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 
 export const fetchMovies = async (
   page: number, 
