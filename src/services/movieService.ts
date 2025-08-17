@@ -6,8 +6,6 @@ export interface FetchMoviesResponse {
     total_pages: number;
 }
 
-const API_TOKEN = import.meta.env.VITE_TMDB_TOKEN;
-
 export const fetchMovies = async (
   page: number, 
   query: string
@@ -19,7 +17,8 @@ export const fetchMovies = async (
         include_adult: false,
     },
     headers: {
-      Authorization: `Bearer ${API_TOKEN}`
+      Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
+      
     },
   });
   return response.data;
